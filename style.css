@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.carousel img:first-child {
+  display: block;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+nav img {
+  width: 120px;
+  height: 120px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.text-box h1 {
+  font-size: 62px;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn2 {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  border: 1px solid #555;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn2:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  color: #fff;
+  transition: 1s;
+}
+
+.hero-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+
+nav .fa {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 3;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+.featured {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+p {
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured-col {
+  flex-basis: 31%;
+  background: #f44336;
+  border-radius: 10px;
+  padding: 20px 12px;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.featured-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+.products {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.product-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-col img {
+  width: 100%;
+  display: block;
+}
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.layer:hover {
+  background: rgba(226, 0, 0, 0.7);
+  transition: 0.5s;
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 600;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+.athletes {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.athlete-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.athlete-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+.athlete-col p {
+  padding: 0;
+}
+.athlete-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.testimonials {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.testimonial-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: center;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+.testimonial-col img {
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 30px;
+  margin-left: 5px;
+}
+.testimonial-col p {
+  padding: 0;
+}
+
+.testimonial-col h3 {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.testimonial-col .fa {
+  color: #f44336;
+}
+
+@media (max-width: 700px) {
+  .testimonial-col img {
+    margin-right: 10px;
+    margin-left: 0px;
+  }
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  position: absolute;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.icons .fa {
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("IMG_9065.JPG");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .sub-header h1 {
+    font-size: 24px;
+  }
+}
+
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.location iframe {
+  width: 100%;
+}
+
+.contact-us {
+  width: 80%;
+  margin: auto;
+}
+
+.contact-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+
+.contact-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-col div .fa {
+  font-size: 28px;
+  color: #f44336;
+  margin-right: 30px;
+  margin: 10px;
+}
+
+.contact-col div p {
+  padding: 0;
+}
+
+.contact-col div h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 400;
+}
+
+.contact-col input,
+.contact-col textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets */
+  .header {
+    min-height: 80vh; /* Adjust header height for tablets */
+  }
+
+  .nav-links ul li {
+    padding: 0 15px; /* Adjust padding between nav-links for tablets */
+  }
+
+  .text-box h1 {
+    font-size: 48px; /* Adjust font size for text-box h1 for tablets */
+  }
+
+  /* Add any other styles for tablets */
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /* Styles for laptops */
+  .header {
+    min-height: 80vh; /* Adjust header height for laptops */
+  }
+
+  .nav-links ul li {
+    padding: 0 20px; /* Adjust padding between nav-links for laptops */
+  }
+
+  .text-box h1 {
+    font-size: 56px; /* Adjust font size for text-box h1 for laptops */
+  }
+
+  /* Add any other styles for laptops */
+}
+
+@media (min-width: 1441px) {
+  /* Styles for larger screens */
+  .header {
+    min-height: 100vh; /* Adjust header height for larger screens */
+  }
+
+  .nav-links {
+    width: auto; /* Adjust width of nav-links for larger screens */
+    text-align: center; /* Align nav-links center for larger screens */
+    padding: 0; /* Remove padding from nav-links for larger screens */
+  }
+
+  .nav-links ul {
+    display: flex; /* Display nav-links as flexbox for larger screens */
+    justify-content: center; /* Center-align nav-links for larger screens */
+  }
+
+  .nav-links ul li {
+    padding: 0 25px; /* Adjust padding between nav-links for larger screens */
+  }
+
+  .nav-links ul li::after {
+    margin: 0 auto; /* Center-align nav-links underline for larger screens */
+  }
+
+  .text-box h1 {
+    font-size: 62px; /* Adjust font size for text-box h1 for larger screens */
+  }
+
+  /* Add any other styles for larger screens */
+}

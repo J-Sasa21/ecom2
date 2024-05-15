@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Whey Protein Powder",
+    "brand": "Huge Supplements",
+    "description": "High-quality whey protein powder for muscle building.",
+    "price": 58.99,
+    "image": "products/ryse2.png"
+  },
+  {
+    "id": 2,
+    "name": "Pre-Workout Formula",
+    "brand": "Huge Supplements",
+    "description": "Boost your energy and focus before workouts.",
+    "price": 38.99,
+    "image": "products/blueWreck.png"
+  },
+  {
+    "id": 3,
+    "name": "BCAA (Branched-Chain Amino Acids) Powder",
+    "brand": "Huge Supplements",
+    "description": "Support muscle recovery and reduce muscle soreness.",
+    "price": 24.99,
+    "image": "amino.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Creatine Monohydrate Powder",
+    "brand": "Huge Supplements",
+    "description": "Increase muscle strength, power, and performance.",
+    "price": 19.99,
+    "image": "creatine.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Omega-3 Fish Oil Capsules",
+    "brand": "Huge Supplements",
+    "description": "Omega-3 fatty acids for joint health and inflammation reduction.",
+    "price": 9.99,
+    "image": "fish.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Multivitamin Tablets",
+    "brand": "Huge Supplements",
+    "description": "Essential vitamins and minerals for overall health and wellbeing.",
+    "price": 12.99,
+    "image": "multi.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Protein Bars",
+    "brand": "Quest Protein",
+    "description": "Convenient snack with protein for muscle recovery on-the-go.",
+    "price": 15.99,
+    "image": "quest.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Protein Cookies",
+    "brand": "Huge Supplements",
+    "description": "Delicious cookies packed with protein for post-workout recovery.",
+    "price": 12.99,
+    "image": "cookie.jpg"
+  },
+  {
+    "id": 9,
+    "name": "BPC-157",
+    "brand": "Arctic Peptides",
+    "description": "Innovation for recovery using the Body Protective Compound and be at your best.",
+    "price": 78.99,
+    "image": "bpc.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Joint Support Supplement",
+    "brand": "Huge Supplements",
+    "description": "Supports joint health and mobility.",
+    "price": 19.99,
+    "image": "joint.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Hibernate Sleep Support",
+    "brand": "Huge Supplements",
+    "description": "Promotes relaxation and better sleep quality.",
+    "price": 17.99,
+    "image": "products/hibernate.png"
+  },
+  {
+    "id": 12,
+    "name": "Energy Boosting Drink Mix",
+    "brand": "Huge Supplements",
+    "description": "Provides a natural energy boost without the crash.",
+    "price": 2.99,
+    "image": "reign.jpg"
+  }
+]
